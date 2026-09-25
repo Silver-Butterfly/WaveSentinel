@@ -1,0 +1,24 @@
+:root {
+	--font-heading: 'Times New Roman', Times, serif;
+	--font-sans: 'Arial', 'Calibri', sans-serif;
+	--font-mono: 'Arial', 'Calibri', sans-serif;
+
+	--bg-abyss: #000000;
+	--bg-panel-dark: rgba(8, 14, 20, 0.85);
+	--bg-stage-gradient: radial-gradient(circle at center, #081a2e 0%, #020810 70%, #000000 100%);
+	--bg-panels-zone: radial-gradient(circle at 50% 50%, #041830 0%, #020b18 60%, #00050c 100%);
+
+	--color-cyan: #38bdf8;
+	--color-cyan-glow: rgba(56, 189, 248, 0.4);
+	--color-electric-blue: #00d2ff;
+	--color-accent-amber: #f59e0b;
+	--color-accent-emerald: #10b981;
+	--color-text-main: #e2e8f0;
+	--color-text-muted: #64748b;
+	--color-text-dim: #94a3b8;
+
+	--border-subtle: rgba(56, 189, 248, 0.15);
+	--border-glass: rgba(255, 255, 255, 0.1);
+
+	--shadow-glow-cyan: 0 0 24px rgba(56, 189, 248, 0.25);
+}

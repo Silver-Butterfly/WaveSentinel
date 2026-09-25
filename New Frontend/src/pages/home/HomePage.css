@@ -1,0 +1,74 @@
+/* Nav for HomePage */
+.wave-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 9999; /* Higher than audio button and canvas */
+}
+.wave-nav.scrolled {
+  background-color: #050505;
+}
+
+.wave-links {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+.wave-nav.scrolled .wave-links {
+  color: #888;
+}
+.wave-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: 'Arial', 'Calibri', sans-serif;
+}
+.wave-links a:hover {
+  color: #fff;
+}
+
+/* Text-based audio button styling */
+.audio-text-btn {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  font-family: 'Arial', 'Calibri', sans-serif;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+.audio-text-btn:hover {
+  color: #fff;
+}
+.wave-nav.scrolled .audio-text-btn {
+  color: #888;
+}
+.wave-nav.scrolled .audio-text-btn:hover {
+  color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .wave-nav {
+    padding: 1rem 1.5rem;
+  }
+  .wave-links {
+    display: none; /* Hide standard links on very small screens to avoid overlap */
+  }
+}

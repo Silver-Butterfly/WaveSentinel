@@ -1,0 +1,183 @@
+#zone-cube {
+	position: relative;
+	background: #000000;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible;
+	padding: 60px 24px;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+#zone-cube::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	height: 450px;
+	background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.09) 0%, transparent 70%);
+	pointer-events: none;
+	z-index: 0;
+}
+
+/* Centered Column Layout */
+#cube-layout {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Header */
+.cube-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	transition: opacity 0.3s ease;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	pointer-events: none; /* Allows clicks to pass through to the cube */
+}
+
+.cube-header.fading-out {
+	opacity: 0;
+}
+
+.cube-title {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: clamp(22px, 3vw, 34px);
+	font-weight: 800;
+	color: #ffffff;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	margin: 0;
+	text-shadow: 0 0 24px rgba(56, 189, 248, 0.5);
+	line-height: 1.2;
+}
+
+/* Clickable Rotating Cube Canvas Wrap */
+#cube-canvas-wrap {
+	position: relative;
+	width: 280px;
+	height: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin: 0 auto;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.35s ease;
+	outline: none;
+	overflow: visible;
+}
+
+#cube-canvas-wrap:hover:not(.is-expanding) {
+	transform: scale(1.08);
+}
+
+/* Seamless, unclipped expansion on click */
+#cube-canvas-wrap.is-expanding {
+	transform: scale(3.6);
+	filter: brightness(2.4) drop-shadow(0 0 80px rgba(56, 189, 248, 0.9));
+	opacity: 0;
+	transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1), filter 0.55s ease-out;
+	pointer-events: none;
+}
+
+#cube-canvas {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	z-index: 2;
+	filter: drop-shadow(0 0 35px rgba(56, 189, 248, 0.3));
+	transition: filter 0.3s ease;
+}
+
+#cube-canvas-wrap:hover:not(.is-expanding) #cube-canvas {
+	filter: drop-shadow(0 0 45px rgba(56, 189, 248, 0.65));
+}
+
+/* Orbital Ring */
+.cube-ring {
+	position: absolute;
+	inset: 0px;
+	border-radius: 50%;
+	border: 1px dashed rgba(56, 189, 248, 0.35);
+	box-shadow: 0 0 35px rgba(56, 189, 248, 0.12),
+	            inset 0 0 25px rgba(56, 189, 248, 0.06);
+	animation: ringRotate 24s linear infinite;
+	pointer-events: none;
+	z-index: 1;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cube-canvas-wrap:hover:not(.is-expanding) .cube-ring {
+	border-color: rgba(56, 189, 248, 0.7);
+	box-shadow: 0 0 45px rgba(56, 189, 248, 0.35);
+}
+
+@keyframes ringRotate {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(360deg); }
+}
+
+/* Interaction Hint */
+.cube-hint-wrap {
+	margin-top: 4px;
+	transition: opacity 0.3s ease;
+}
+
+.cube-hint-wrap.fading-out {
+	opacity: 0;
+}
+
+.cube-click-hint {
+	font-family: 'Inter', sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	color: #38bdf8;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	opacity: 0.85;
+	transition: all 0.2s ease;
+}
+
+#cube-canvas-wrap:hover:not(.is-expanding) ~ .cube-hint-wrap .cube-click-hint {
+	opacity: 1;
+	color: #ffffff;
+	text-shadow: 0 0 10px #38bdf8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	#zone-cube {
+		padding: 40px 16px;
+	}
+
+	#cube-canvas-wrap {
+		width: 240px;
+		height: 240px;
+	}
+
+	.cube-title {
+		letter-spacing: 2px;
+	}
+}

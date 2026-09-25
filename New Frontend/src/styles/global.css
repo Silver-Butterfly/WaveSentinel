@@ -1,0 +1,130 @@
+@import './variables.css';
+@import './tailwind.css';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	background-color: #000000;
+}
+
+body {
+	margin: 0;
+	background-color: #000000;
+	color: var(--color-text-main);
+	font-family: 'Arial', 'Calibri', sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+	overscroll-behavior: none;
+	overflow-x: clip;
+	overflow-y: auto;
+	user-select: none;
+	width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+	width: 6px;
+	background: #02060c;
+}
+
+::-webkit-scrollbar-track {
+	background: #02060c;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(56, 189, 248, 0.25);
+	border-radius: 9999px;
+	transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(56, 189, 248, 0.6);
+	box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+/* Text selection styling */
+::selection {
+	background: rgba(56, 189, 248, 0.35);
+	color: #ffffff;
+}
+
+#root {
+	width: 100%;
+}
+
+/* Scrollable overlay root */
+.scroll-root {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+}
+
+/* Common telemetry tags */
+.classified-tag {
+	font-family: 'Arial', 'Calibri', sans-serif;
+	font-size: 11px;
+	color: var(--color-cyan);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	opacity: 0.85;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+/* Glassmorphism styling from prompt */
+.glass-card {
+  background: rgba(255, 255, 255, 0.11) !important;
+  backdrop-filter: blur(26px) !important;
+  -webkit-backdrop-filter: blur(26px) !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 4px 2px rgba(255, 255, 255, 0.2) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+  z-index: 10;
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+  z-index: 10;
+}
