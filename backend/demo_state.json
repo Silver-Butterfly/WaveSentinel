@@ -1,0 +1,182 @@
+{
+  "mission": {
+    "missionId": "WS-2026-001",
+    "status": "ACTIVE",
+    "surveyArea": "Bay Sector 04",
+    "surveyLine": "L-04",
+    "operationalMode": "SIMULATION",
+    "framesProcessed": 1284,
+    "framesTotal": 2000,
+    "sssRange": 100,
+    "simulatedSwath": 200,
+    "frameRate": 8.4,
+    "vesselSpeed": 4.2,
+    "heading": 142,
+    "depth": 42.3,
+    "detectionsCount": 347,
+    "highRiskCount": 42,
+    "avgLatencyMs": 4.35
+  },
+  "settings": {
+    "simulationMode": true,
+    "syntheticSssStream": true,
+    "syntheticTelemetry": true,
+    "simulatedGeolocation": true,
+    "motionMetadata": true,
+    "nmsIou": 0.5,
+    "frozenThresholds": {
+      "pipe": 0.56,
+      "shipwreck": 0.45,
+      "mine": 0.89,
+      "ghost_net": 0.36
+    },
+    "gpuDevice": "RTX 4050 (Device 0)"
+  },
+  "detections": [
+    {
+      "mission_id": "WS-2026-001",
+      "frame_id": "WS_001284",
+      "timestamp": "11:37:42",
+      "class": "Shipwreck",
+      "confidence": 87,
+      "risk": "HIGH",
+      "risk_source": "simulated_demo",
+      "depth": "42.3 m",
+      "latitude": "20.4521\u00b0 N",
+      "longitude": "85.1294\u00b0 E",
+      "position_source": "simulated_frame_anchor",
+      "telemetry_source": "simulation",
+      "heave": "+0.18 m",
+      "pitch": "+2.4\u00b0",
+      "roll": "-1.1\u00b0",
+      "motion_correction_state": "metadata_only",
+      "input_quality": "good",
+      "model_version": "Phase-D Robust-V2-HN",
+      "review_status": "pending",
+      "operator_notes": "Large vessel hull lying on rocky shelf."
+    },
+    {
+      "mission_id": "WS-2026-001",
+      "frame_id": "WS_001281",
+      "timestamp": "11:34:10",
+      "class": "Pipe",
+      "confidence": 94,
+      "risk": "MEDIUM",
+      "risk_source": "simulated_demo",
+      "depth": "40.8 m",
+      "latitude": "20.4518\u00b0 N",
+      "longitude": "85.1288\u00b0 E",
+      "position_source": "simulated_frame_anchor",
+      "telemetry_source": "simulation",
+      "heave": "+0.17 m",
+      "pitch": "+2.3\u00b0",
+      "roll": "-1.0\u00b0",
+      "motion_correction_state": "metadata_only",
+      "input_quality": "good",
+      "model_version": "Phase-D Robust-V2-HN",
+      "review_status": "confirmed",
+      "operator_notes": "Subsea pipeline segment exposed."
+    },
+    {
+      "mission_id": "WS-2026-001",
+      "frame_id": "WS_001275",
+      "timestamp": "11:29:05",
+      "class": "Mine",
+      "confidence": 98,
+      "risk": "CRITICAL",
+      "risk_source": "simulated_demo",
+      "depth": "45.1 m",
+      "latitude": "20.4490\u00b0 N",
+      "longitude": "85.1250\u00b0 E",
+      "position_source": "simulated_frame_anchor",
+      "telemetry_source": "simulation",
+      "heave": "+0.16 m",
+      "pitch": "+2.3\u00b0",
+      "roll": "-0.9\u00b0",
+      "motion_correction_state": "metadata_only",
+      "input_quality": "good",
+      "model_version": "Phase-D Robust-V2-HN",
+      "review_status": "pending",
+      "operator_notes": "Mine-class contact flag in simulation demo."
+    },
+    {
+      "mission_id": "WS-2026-001",
+      "frame_id": "WS_001264",
+      "timestamp": "11:18:22",
+      "class": "Ghost Net",
+      "confidence": 69,
+      "risk": "HIGH",
+      "risk_source": "simulated_demo",
+      "depth": "38.5 m",
+      "latitude": "20.4430\u00b0 N",
+      "longitude": "85.1210\u00b0 E",
+      "position_source": "simulated_frame_anchor",
+      "telemetry_source": "simulation",
+      "heave": "+0.19 m",
+      "pitch": "+2.5\u00b0",
+      "roll": "-1.2\u00b0",
+      "motion_correction_state": "metadata_only",
+      "input_quality": "good",
+      "model_version": "Phase-D Robust-V2-HN",
+      "review_status": "pending",
+      "operator_notes": "Abandoned gillnet candidate in simulation demo."
+    }
+  ],
+  "classCounts": {
+    "SHIPWRECK": 142,
+    "PIPE": 98,
+    "MINE": 64,
+    "GHOST_NET": 43
+  },
+  "telemetry": {
+    "heave": "+0.18 m",
+    "pitch": "+2.4\u00b0",
+    "roll": "-1.1\u00b0",
+    "heading": "142\u00b0",
+    "depth": "42.3 m",
+    "vesselSpeed": "4.2 kts",
+    "latency": "4.35 ms",
+    "timestamp": "11:37:42",
+    "position": "20.4521\u00b0 N, 85.1294\u00b0 E",
+    "frameId": "SIM_001284",
+    "source": "simulation",
+    "valid": true
+  },
+  "telemetryLog": [
+    {
+      "time": "11:37:42",
+      "heave": "+0.18 m",
+      "pitch": "+2.4\u00b0",
+      "roll": "-1.1\u00b0",
+      "depth": "42.3 m"
+    },
+    {
+      "time": "11:37:41",
+      "heave": "+0.17 m",
+      "pitch": "+2.3\u00b0",
+      "roll": "-1.0\u00b0",
+      "depth": "42.3 m"
+    },
+    {
+      "time": "11:37:40",
+      "heave": "+0.16 m",
+      "pitch": "+2.3\u00b0",
+      "roll": "-0.9\u00b0",
+      "depth": "42.2 m"
+    },
+    {
+      "time": "11:37:39",
+      "heave": "+0.15 m",
+      "pitch": "+2.2\u00b0",
+      "roll": "-0.8\u00b0",
+      "depth": "42.2 m"
+    },
+    {
+      "time": "11:37:38",
+      "heave": "+0.14 m",
+      "pitch": "+2.1\u00b0",
+      "roll": "-0.8\u00b0",
+      "depth": "42.1 m"
+    }
+  ]
+}
