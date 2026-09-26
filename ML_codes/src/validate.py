@@ -1,5 +1,4 @@
 """
-DRISHTI-SSS V5 - strict, non-destructive dataset validator.
 
 Checks:
 - exact filesystem image/label accounting
