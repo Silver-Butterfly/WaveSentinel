@@ -1,0 +1,1297 @@
+{
+  "dataset_root": "K:\\Debris model\\SubPipeMiniSSS",
+  "audit_scope": "SubPipeMini2 SSS-only Level-2 audit",
+  "source_policy": {
+    "included": [
+      "SSS LF",
+      "SSS HF",
+      "associated telemetry/config for audit"
+    ],
+    "excluded": [
+      "FLS",
+      "MBES",
+      "synthetic/simulated sonar",
+      "edge deployment"
+    ]
+  },
+  "file_counts": {
+    "all_files": 20079,
+    "images": 16630,
+    "csv": 10,
+    "json": 3,
+    "txt": 1368,
+    "yaml": 1
+  },
+  "image_inventory": {
+    "CAM0": {
+      "count": 16200,
+      "dimensions_channels": {
+        "2704x1520x3": 16200
+      },
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.904,
+        "p01": 1693572858.3106701,
+        "p05": 1693572879.9363499,
+        "median": 1693573123.2235,
+        "mean": 1693573123.2233253,
+        "p95": 1693573366.5106502,
+        "p99": 1693573388.13633,
+        "max": 1693573393.542
+      },
+      "unreadable_count": 0,
+      "unreadable_examples": []
+    },
+    "CAM1": {
+      "count": 430,
+      "dimensions_channels": {
+        "1936x1216x3": 430
+      },
+      "timestamp_stats": {
+        "count": 430,
+        "min": 1693573286.627,
+        "p01": 1693573287.68963,
+        "p05": 1693573291.8896499,
+        "median": 1693573340.2195,
+        "mean": 1693573340.1716766,
+        "p95": 1693573388.41365,
+        "p99": 1693573392.76956,
+        "max": 1693573393.817
+      },
+      "unreadable_count": 0,
+      "unreadable_examples": []
+    }
+  },
+  "coco": [
+    {
+      "file": "DATA/SSS_HF_images/COCO_Annotation/coco_format.json",
+      "images": 903,
+      "annotations": 593,
+      "categories": [
+        {
+          "id": 1,
+          "name": "Pipeline",
+          "supercategory": "Pipeline"
+        }
+      ],
+      "annotation_category_counts": {
+        "1": 593
+      },
+      "orphan_annotation_image_ids": [],
+      "orphan_annotation_count": 0,
+      "unknown_category_annotation_count": 0,
+      "matched_to_local_sss_images": 0,
+      "unmatched_local_image_references": [
+        "1693569954.939.pbm",
+        "1693569503.799.pbm",
+        "1693569224.750.pbm",
+        "1693569734.850.pbm",
+        "1693569502.799.pbm",
+        "1693569277.759.pbm",
+        "1693569377.780.pbm",
+        "1693569553.810.pbm",
+        "1693569547.809.pbm",
+        "1693569839.869.pbm",
+        "1693569581.819.pbm",
+        "1693569819.869.pbm",
+        "1693569228.750.pbm",
+        "1693569456.790.pbm",
+        "1693570094.970.pbm",
+        "1693570036.959.pbm",
+        "1693569698.840.pbm",
+        "1693569339.770.pbm",
+        "1693569602.819.pbm",
+        "1693569907.929.pbm",
+        "1693570038.959.pbm",
+        "1693569918.940.pbm",
+        "1693569248.750.pbm",
+        "1693570023.960.pbm",
+        "1693569982.950.pbm",
+        "1693569539.810.pbm",
+        "1693569441.790.pbm",
+        "1693569524.810.pbm",
+        "1693570044.959.pbm",
+        "1693569391.780.pbm",
+        "1693570088.970.pbm",
+        "1693569333.770.pbm",
+        "1693569268.760.pbm",
+        "1693569493.800.pbm",
+        "1693569702.840.pbm",
+        "1693569563.809.pbm",
+        "1693569855.869.pbm",
+        "1693569667.840.pbm",
+        "1693569575.819.pbm",
+        "1693569270.760.pbm",
+        "1693569995.950.pbm",
+        "1693569245.750.pbm",
+        "1693569243.750.pbm",
+        "1693569813.860.pbm",
+        "1693570060.959.pbm",
+        "1693570127.979.pbm",
+        "1693569267.760.pbm",
+        "1693569510.799.pbm",
+        "1693569478.799.pbm",
+        "1693569721.850.pbm"
+      ],
+      "unmatched_local_image_reference_count": 903,
+      "matched_modality_counts": {},
+      "images_with_annotations": 566,
+      "images_without_annotations": 337,
+      "objects_per_image": {
+        "count": 903,
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "median": 1.0,
+        "mean": 0.6566998892580288,
+        "p95": 1.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "bbox_width": {
+        "count": 593,
+        "min": 78.0,
+        "p01": 155.68,
+        "p05": 233.0,
+        "median": 448.0,
+        "mean": 437.78920741989884,
+        "p95": 582.0,
+        "p99": 627.0800000000002,
+        "max": 709.9999999999999
+      },
+      "bbox_height": {
+        "count": 593,
+        "min": 75.0,
+        "p01": 128.6,
+        "p05": 216.79999999999998,
+        "median": 491.0,
+        "mean": 454.64586846543,
+        "p95": 499.0,
+        "p99": 499.0,
+        "max": 499.0
+      },
+      "bbox_area": {
+        "count": 593,
+        "min": 8625.0,
+        "p01": 24873.76,
+        "p05": 52596.0,
+        "median": 219968.0,
+        "mean": 205665.5784148398,
+        "p95": 288477.0,
+        "p99": 304659.4000000004,
+        "max": 351449.99999999994
+      },
+      "bbox_area_fraction": {},
+      "invalid_bbox_count": 0,
+      "invalid_bbox_examples": [],
+      "missing_bbox_count": 0,
+      "annotation_timestamp_stats": {},
+      "annotation_timestamp_gap_stats": {},
+      "annotation_clusters_gap_threshold_sec": 0.5,
+      "annotation_cluster_count_estimate": 0
+    },
+    {
+      "file": "DATA/SSS_LF_images/COCO_Annotation/coco_format.json",
+      "images": 1055,
+      "annotations": 726,
+      "categories": [
+        {
+          "id": 1,
+          "name": "Pipeline",
+          "supercategory": "Pipeline"
+        }
+      ],
+      "annotation_category_counts": {
+        "1": 726
+      },
+      "orphan_annotation_image_ids": [],
+      "orphan_annotation_count": 0,
+      "unknown_category_annotation_count": 0,
+      "matched_to_local_sss_images": 0,
+      "unmatched_local_image_references": [
+        "1693569954.939.pbm",
+        "1693569503.799.pbm",
+        "1693569224.750.pbm",
+        "1693573353.81.pbm",
+        "1693569734.850.pbm",
+        "1693569502.799.pbm",
+        "1693569219.799.pbm",
+        "1693569277.759.pbm",
+        "1693570211.989.pbm",
+        "1693569377.780.pbm",
+        "1693569553.810.pbm",
+        "1693569547.809.pbm",
+        "1693569839.869.pbm",
+        "1693570138.979.pbm",
+        "1693569581.819.pbm",
+        "1693569819.869.pbm",
+        "1693569228.750.pbm",
+        "1693569456.790.pbm",
+        "1693570094.970.pbm",
+        "1693570036.959.pbm",
+        "1693569698.840.pbm",
+        "1693569339.770.pbm",
+        "1693569602.819.pbm",
+        "1693569907.929.pbm",
+        "1693570038.959.pbm",
+        "1693569918.940.pbm",
+        "1693569248.750.pbm",
+        "1693570023.960.pbm",
+        "1693569982.950.pbm",
+        "1693569539.810.pbm",
+        "1693569441.790.pbm",
+        "1693569524.810.pbm",
+        "1693570044.959.pbm",
+        "1693569391.780.pbm",
+        "1693570227.000.pbm",
+        "1693570088.970.pbm",
+        "1693569333.770.pbm",
+        "1693569268.760.pbm",
+        "1693569493.800.pbm",
+        "1693569702.840.pbm",
+        "1693569563.809.pbm",
+        "1693569855.869.pbm",
+        "1693569667.840.pbm",
+        "1693569575.819.pbm",
+        "1693569329.770.pbm",
+        "1693569270.760.pbm",
+        "1693569995.950.pbm",
+        "1693573349.809.pbm",
+        "1693570155.979.pbm",
+        "1693569245.750.pbm"
+      ],
+      "unmatched_local_image_reference_count": 1055,
+      "matched_modality_counts": {},
+      "images_with_annotations": 696,
+      "images_without_annotations": 359,
+      "objects_per_image": {
+        "count": 1055,
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "median": 1.0,
+        "mean": 0.6881516587677725,
+        "p95": 1.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "bbox_width": {
+        "count": 726,
+        "min": 64.0,
+        "p01": 87.25,
+        "p05": 118.25,
+        "median": 222.0,
+        "mean": 219.87603305785123,
+        "p95": 289.0,
+        "p99": 306.0,
+        "max": 328.0
+      },
+      "bbox_height": {
+        "count": 726,
+        "min": 48.0,
+        "p01": 88.0,
+        "p05": 179.25,
+        "median": 496.5,
+        "mean": 449.19972451790636,
+        "p95": 499.0,
+        "p99": 499.0,
+        "max": 499.0
+      },
+      "bbox_area": {
+        "count": 726,
+        "min": 3312.0,
+        "p01": 9025.5,
+        "p05": 23369.25,
+        "median": 109532.0,
+        "mean": 102245.52479338842,
+        "p95": 143404.0,
+        "p99": 152368.5,
+        "max": 162360.0
+      },
+      "bbox_area_fraction": {},
+      "invalid_bbox_count": 0,
+      "invalid_bbox_examples": [],
+      "missing_bbox_count": 0,
+      "annotation_timestamp_stats": {},
+      "annotation_timestamp_gap_stats": {},
+      "annotation_clusters_gap_threshold_sec": 0.5,
+      "annotation_cluster_count_estimate": 0
+    }
+  ],
+  "yolo": {
+    "yolo_annotation_files_discovered": 1368,
+    "matched_yolo_annotation_files": 0,
+    "matched_by_modality": {},
+    "object_counts": {},
+    "invalid_row_files": 0,
+    "invalid_row_count": 0,
+    "sample_records": []
+  },
+  "coco_yolo_comparison": [
+    {
+      "coco_file": "DATA/SSS_HF_images/COCO_Annotation/coco_format.json",
+      "coco_images": 903,
+      "coco_annotations": 593,
+      "yolo_matched_files_in_sample": 0,
+      "note": "Full per-image COCO\u2194YOLO equality requires local re-read of both annotation sets; this audit summary does not silently infer equality."
+    },
+    {
+      "coco_file": "DATA/SSS_LF_images/COCO_Annotation/coco_format.json",
+      "coco_images": 1055,
+      "coco_annotations": 726,
+      "yolo_matched_files_in_sample": 0,
+      "note": "Full per-image COCO\u2194YOLO equality requires local re-read of both annotation sets; this audit summary does not silently infer equality."
+    }
+  ],
+  "telemetry": [
+    {
+      "file": "DATA/Acceleration.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " x (m/s/s)",
+        " y (m/s/s)",
+        " z (m/s/s)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " x (m/s/s)": {
+          "min": -0.7966282812388241,
+          "max": 0.81,
+          "p01": -0.48572443809549226,
+          "p99": 0.490666875311057,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " y (m/s/s)": {
+          "min": -1.1764821781942159,
+          "max": 1.236629346354117,
+          "p01": -0.6744172726381198,
+          "p99": 0.6743161992677968,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " z (m/s/s)": {
+          "min": -1.3177114655604034,
+          "max": 1.1379456881958847,
+          "p01": -0.8252577493264669,
+          "p99": 0.7941426634154194,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        }
+      }
+    },
+    {
+      "file": "DATA/Altitude.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " DVL - Beam 0 (m)",
+        " DVL - Beam 1 (m)",
+        " DVL - Beam 2 (m)",
+        " DVL - Beam 3 (m)",
+        " DVL Filtered"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " DVL - Beam 0 (m)": {
+          "min": 0.0,
+          "max": 20.990547515422712,
+          "p01": 0.0,
+          "p99": 18.889912645420583,
+          "extreme_low_count": 0,
+          "extreme_high_count": 162
+        },
+        " DVL - Beam 1 (m)": {
+          "min": 0.0,
+          "max": 21.587289058501526,
+          "p01": 0.0,
+          "p99": 19.16264799580971,
+          "extreme_low_count": 0,
+          "extreme_high_count": 162
+        },
+        " DVL - Beam 2 (m)": {
+          "min": 0.0,
+          "max": 20.976247313024324,
+          "p01": 0.0,
+          "p99": 19.0510701334141,
+          "extreme_low_count": 0,
+          "extreme_high_count": 162
+        },
+        " DVL - Beam 3 (m)": {
+          "min": 0.0,
+          "max": 20.527741222933678,
+          "p01": 0.0,
+          "p99": 18.56973399820909,
+          "extreme_low_count": 0,
+          "extreme_high_count": 162
+        },
+        " DVL Filtered": {
+          "min": -1.0,
+          "max": 18.508913015420905,
+          "p01": -1.0,
+          "p99": 17.989500853059784,
+          "extreme_low_count": 0,
+          "extreme_high_count": 162
+        }
+      }
+    },
+    {
+      "file": "DATA/AngularVelocity.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " x (rad/s)",
+        " y (rad/s)",
+        " z (rad/s)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " x (rad/s)": {
+          "min": -1.6803350773874544,
+          "max": 3.859200567050392,
+          "p01": -0.4898932457055786,
+          "p99": 0.6289345505659811,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " y (rad/s)": {
+          "min": -0.2740987373313783,
+          "max": 0.17951013350001907,
+          "p01": -0.14609773193867084,
+          "p99": 0.13127754008465636,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " z (rad/s)": {
+          "min": -0.21497840456333597,
+          "max": 0.25231272787878783,
+          "p01": -0.17363871391101068,
+          "p99": 0.1695233471651707,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        }
+      }
+    },
+    {
+      "file": "DATA/Depth.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " value (m)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " value (m)": {
+          "min": -0.5975014781895516,
+          "max": 9.203457454163985,
+          "p01": -0.4219060532925348,
+          "p99": 7.919963481498668,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        }
+      }
+    },
+    {
+      "file": "DATA/EstimatedState.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " x (m)",
+        " y (m)",
+        " z (m)",
+        " phi (rad)",
+        " theta (rad)",
+        " psi (rad)",
+        " u (m/s)",
+        " v (m/s)",
+        " w (m/s)",
+        " vx (m/s)",
+        " vy (m/s)",
+        " vz (m/s)",
+        " p (rad/s)",
+        " q (rad/s)",
+        " r (rad/s)",
+        " depth (m)",
+        " alt (m)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " x (m)": {
+          "min": -64.25277311322546,
+          "max": 224.7915477815253,
+          "p01": -63.77012668500766,
+          "p99": 224.1833960822075,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " y (m)": {
+          "min": -86.40359186425886,
+          "max": 32.9594361558934,
+          "p01": -81.77972417798996,
+          "p99": 32.6979213525407,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " z (m)": {
+          "min": -259.43853959208036,
+          "max": 76.57564103803324,
+          "p01": -258.9981531244371,
+          "p99": 76.20314234710719,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " phi (rad)": {
+          "min": -3.139477672078774,
+          "max": 3.1379618577593402,
+          "p01": -0.24746688524902843,
+          "p99": 0.20895533438237618,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " theta (rad)": {
+          "min": -0.325,
+          "max": 0.131,
+          "p01": -0.315,
+          "p99": 0.10587587797725488,
+          "extreme_low_count": 161,
+          "extreme_high_count": 162
+        },
+        " psi (rad)": {
+          "min": 2.454,
+          "max": 5.779,
+          "p01": 2.6342136240612253,
+          "p99": 5.752645454328855,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " u (m/s)": {
+          "min": -0.329,
+          "max": 1.985,
+          "p01": -0.22865735030875237,
+          "p99": 1.6306943021243119,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " v (m/s)": {
+          "min": -0.7421340533581289,
+          "max": 0.6507099301432897,
+          "p01": -0.39763425683655956,
+          "p99": 0.4379703421309875,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " w (m/s)": {
+          "min": -0.812,
+          "max": 0.7766702954009013,
+          "p01": -0.4233834095319839,
+          "p99": 0.535482881768114,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " vx (m/s)": {
+          "min": -1.9988277996328352,
+          "max": 1.116632620461102,
+          "p01": -1.6374872697265355,
+          "p99": 0.7035462878191833,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " vy (m/s)": {
+          "min": -1.583512559842835,
+          "max": 0.8942007438666763,
+          "p01": -1.4359570086546025,
+          "p99": 0.706893428319386,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " vz (m/s)": {
+          "min": -0.7585570226259447,
+          "max": 0.6307246262785209,
+          "p01": -0.4376190327825859,
+          "p99": 0.47328715798518783,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " p (rad/s)": {
+          "min": -1.6802369167679947,
+          "max": 3.8588324591352112,
+          "p01": -0.4898955726583353,
+          "p99": 0.6288787337577189,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " q (rad/s)": {
+          "min": -0.27432844574780063,
+          "max": 0.17950221728432736,
+          "p01": -0.14607547942154253,
+          "p99": 0.13127803107083083,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " r (rad/s)": {
+          "min": -0.2147856805664831,
+          "max": 0.25187878787878787,
+          "p01": -0.1732562169134301,
+          "p99": 0.16920987248850974,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " depth (m)": {
+          "min": -0.143,
+          "max": 8.792,
+          "p01": -0.094,
+          "p99": 7.726,
+          "extreme_low_count": 155,
+          "extreme_high_count": 161
+        },
+        " alt (m)": {
+          "min": -1.0,
+          "max": 18.524,
+          "p01": -1.0,
+          "p99": 17.995,
+          "extreme_low_count": 0,
+          "extreme_high_count": 159
+        }
+      }
+    },
+    {
+      "file": "DATA/ForwardDistance.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " Echo Sounder (m)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " Echo Sounder (m)": {
+          "min": 22.169774680201805,
+          "max": 29.931416374884602,
+          "p01": 24.82627703312358,
+          "p99": 29.928968960094814,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        }
+      }
+    },
+    {
+      "file": "DATA/Pressure.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " value (hpa)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " value (hpa)": {
+          "min": 0.0,
+          "max": 91559.0934649014,
+          "p01": 0.0,
+          "p99": 80972.68099293686,
+          "extreme_low_count": 0,
+          "extreme_high_count": 162
+        }
+      }
+    },
+    {
+      "file": "DATA/Rpm.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " value (rpm)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " value (rpm)": {
+          "min": 0.0,
+          "max": 1509.8533727836045,
+          "p01": 0.0,
+          "p99": 1499.025692368214,
+          "extreme_low_count": 0,
+          "extreme_high_count": 162
+        }
+      }
+    },
+    {
+      "file": "DATA/Temperature.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " value (\u00b0c)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " value (\u00b0c)": {
+          "min": 13.873136783097653,
+          "max": 28.5,
+          "p01": 15.563958595440733,
+          "p99": 28.0,
+          "extreme_low_count": 162,
+          "extreme_high_count": 67
+        }
+      }
+    },
+    {
+      "file": "DATA/WaterVelocity.csv",
+      "rows": 16200,
+      "columns": [
+        "image",
+        "timestamp",
+        " x (m/s)",
+        " y (m/s)",
+        " z (m/s)"
+      ],
+      "blank_cells": 0,
+      "duplicate_rows": 0,
+      "timestamp_present": true,
+      "timestamp_stats": {
+        "count": 16200,
+        "min": 1693572852.9043648,
+        "p01": 1693572858.310744,
+        "p05": 1693572879.936261,
+        "median": 1693573123.2233262,
+        "mean": 1693573123.2233262,
+        "p95": 1693573366.5103912,
+        "p99": 1693573388.1359081,
+        "max": 1693573393.5422873
+      },
+      "timestamp_step_stats": {
+        "count": 16199,
+        "min": 0.03337454795837402,
+        "p01": 0.03337454795837402,
+        "p05": 0.03337454795837402,
+        "median": 0.033374786376953125,
+        "mean": 0.03337477143807679,
+        "p95": 0.033374786376953125,
+        "p99": 0.033374786376953125,
+        "max": 0.033374786376953125
+      },
+      "negative_timestamp_steps": 0,
+      "zero_timestamp_steps": 0,
+      "numeric_column_extremes": {
+        "timestamp": {
+          "min": 1693572852.9043648,
+          "max": 1693573393.5422873,
+          "p01": 1693572858.310744,
+          "p99": 1693573388.1359081,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " x (m/s)": {
+          "min": -32.76800156,
+          "max": 2.0608498909616144,
+          "p01": -26.619015338871463,
+          "p99": 1.7187965622266497,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " y (m/s)": {
+          "min": -32.76800156,
+          "max": 0.7537088903977517,
+          "p01": -26.806172963553536,
+          "p99": 0.30250775600932667,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        },
+        " z (m/s)": {
+          "min": -32.76800156,
+          "max": 0.631482165869794,
+          "p01": -25.32502464252703,
+          "p99": 0.438338467931666,
+          "extreme_low_count": 162,
+          "extreme_high_count": 162
+        }
+      }
+    }
+  ],
+  "temporal_image_audit": {},
+  "effective_sample_estimate": {
+    "status": "not_computed"
+  },
+  "config": {
+    "cam0": [
+      {
+        "name": "GoPro Camera"
+      },
+      {
+        "resolution": [
+          {
+            "width": 2704
+          },
+          {
+            "height": 1520
+          },
+          {
+            "channels": 3
+          }
+        ]
+      },
+      {
+        "frame_rate": 30
+      },
+      {
+        "frame_rate_units": "Hz (hertz)"
+      },
+      {
+        "offset_x": 619.0
+      },
+      {
+        "offset_x_units": "mm (milimeters)"
+      },
+      {
+        "offset_z": -120.0
+      },
+      {
+        "offset_Z_units": "mm (milimeters)"
+      },
+      {
+        "offset_theta": -56.0
+      },
+      {
+        "offset_theta_units": "\u00b0 (degrees)"
+      },
+      {
+        "fx": 1612.36
+      },
+      {
+        "fy": 1622.56
+      },
+      {
+        "cx": 1365.43
+      },
+      {
+        "cy": 741.27
+      },
+      {
+        "k1_k2_p1_p2": [
+          -0.247,
+          0.0869,
+          -0.006,
+          0.001
+        ]
+      }
+    ],
+    "cam1": [
+      {
+        "name": "Gray-scale Camera"
+      },
+      {
+        "resolution": [
+          {
+            "width": 1936
+          },
+          {
+            "height": 1216
+          },
+          {
+            "channels": 1
+          }
+        ]
+      },
+      {
+        "frame_rate": 4
+      },
+      {
+        "frame_rate_units": "Hz (hertz)"
+      },
+      {
+        "offset_x": -813.0
+      },
+      {
+        "offset_x_units": "mm (milimeters)"
+      },
+      {
+        "offset_z": -45.0
+      },
+      {
+        "offset_Z_units": "mm (milimeters)"
+      },
+      {
+        "offset_theta": -90.0
+      },
+      {
+        "offset_theta_units": "\u00b0 (degrees)"
+      }
+    ],
+    "SSS": [
+      {
+        "entity1": [
+          {
+            "name": "Low Frequency SSS"
+          },
+          {
+            "frequency": 455
+          },
+          {
+            "unit": "kilo Hertz (kHz)"
+          }
+        ]
+      },
+      {
+        "entity2": [
+          {
+            "name": "High Freqency SSS"
+          },
+          {
+            "frequency": 900
+          },
+          {
+            "unit": "kilo Hertz (kHz)"
+          }
+        ]
+      },
+      {
+        "normalization_factor": 0.2
+      },
+      {
+        "TVG_factor": 280
+      },
+      {
+        "colormap": "bronze"
+      },
+      {
+        "SSS_horizontal_angles": 20
+      },
+      {
+        "SSS_horizontal_angles_unit": "\u00b0 (degrees)"
+      },
+      {
+        "brand": "Klein3500"
+      }
+    ]
+  },
+  "verdict": {
+    "status": "BLOCKED_UNMATCHED_COCO",
+    "summary": "Some COCO image references do not resolve to local SSS images. Training is blocked until the path/name mapping is resolved.",
+    "required_actions": [
+      "Keep LF/HF SSS images as separate audited populations until preprocessing and frequency harmonization are justified.",
+      "Use survey/site/pass/date/sequence groups for train/validation/test partitioning. Do not perform a random image-level split.",
+      "Resolve exact per-image COCO\u2194YOLO equivalence before choosing one annotation format as the canonical training source.",
+      "Quantify annotated-frame clustering and avoid placing adjacent frames from the same continuous run into different splits.",
+      "Map telemetry timestamps to SSS image timestamps only after confirming timestamp semantics and camera/SSS synchronization.",
+      "Inspect telemetry extreme values semantically. Do not label negative or large values invalid solely from magnitude.",
+      "Document the final leakage-safe grouping rule in /audit/data_audit_report.md before model implementation."
+    ]
+  },
+  "evidence_policy": {
+    "verified_local": "Facts directly read from the local dataset.",
+    "computed": "Statistics calculated by this script.",
+    "inference": "Sequence boundaries and effective-sample planning estimates are explicitly labeled as inference.",
+    "unknown": "True survey/site/pass identity unless established from local metadata."
+  }
+}

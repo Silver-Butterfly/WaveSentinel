@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "WaveSentinel Motion Telemetry",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "schema_version",
+      "timestamp",
+      "sequence",
+      "telemetry_source",
+      "valid",
+      "heave_m",
+      "pitch_deg",
+      "roll_deg"
+    ],
+    "properties": {
+      "schema_version": {
+        "const": "1.0"
+      },
+      "timestamp": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "sequence": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "telemetry_source": {
+        "type": "string",
+        "enum": [
+          "simulation",
+          "real_imu"
+        ]
+      },
+      "valid": {
+        "type": "boolean"
+      },
+      "heave_m": {
+        "type": "number"
+      },
+      "pitch_deg": {
+        "type": "number",
+        "minimum": -90,
+        "maximum": 90
+      },
+      "roll_deg": {
+        "type": "number",
+        "minimum": -180,
+        "maximum": 180
+      }
+    }
+  }

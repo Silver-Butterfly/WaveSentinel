@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WaveSentinel Geotag Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "mission_id",
+    "frame_id",
+    "frame_timestamp",
+    "geotag_mode",
+    "target_georeferenced",
+    "status",
+    "limitation"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "mission_id": {"type": "string", "minLength": 1},
+    "frame_id": {"type": "string", "minLength": 1},
+    "detection_id": {"type": ["string", "null"]},
+    "frame_timestamp": {"type": "string"},
+    "navigation_timestamp": {"type": ["string", "null"]},
+    "navigation_sequence": {"type": ["integer", "null"], "minimum": 0},
+    "navigation_source": {"type": ["string", "null"], "enum": ["simulation", "real_gnss", null]},
+    "alignment_error_s": {"type": ["number", "null"], "minimum": 0},
+    "latitude_deg": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+    "longitude_deg": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+    "depth_m": {"type": ["number", "null"], "minimum": 0},
+    "heading_deg": {"type": ["number", "null"], "minimum": 0, "exclusiveMaximum": 360},
+    "speed_mps": {"type": ["number", "null"], "minimum": 0},
+    "geotag_mode": {
+      "type": "string",
+      "enum": [
+        "simulated_frame_anchor",
+        "real_gnss_frame_anchor",
+        "target_georeference_ready",
+        "target_georeferenced",
+        "blocked_no_navigation",
+        "blocked_alignment",
+        "blocked_invalid_navigation"
+      ]
+    },
+    "target_georeferenced": {"type": "boolean"},
+    "geometry_ready": {"type": "boolean"},
+    "status": {"type": "string", "enum": ["PASS", "BLOCKED"]},
+    "limitation": {"type": "string", "minLength": 1}
+  }
+}

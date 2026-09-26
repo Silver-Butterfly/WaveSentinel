@@ -1,0 +1,57 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "SIH SSS Motion Correction Plan",
+    "type": "object",
+    "required": [
+      "schema_version",
+      "frame_timestamp",
+      "telemetry_timestamp",
+      "telemetry_sequence",
+      "telemetry_source",
+      "telemetry_valid",
+      "alignment_error_s",
+      "reference",
+      "relative_heave_m",
+      "relative_pitch_deg",
+      "relative_roll_deg",
+      "correction_mode",
+      "heave_action",
+      "pitch_action",
+      "roll_action",
+      "applied_to_pixels",
+      "geometry_ready",
+      "limitation"
+    ],
+    "properties": {
+      "schema_version": {"const": "1.0"},
+      "frame_timestamp": {"type": "string"},
+      "telemetry_timestamp": {"type": "string"},
+      "telemetry_sequence": {"type": "integer", "minimum": 0},
+      "telemetry_source": {"enum": ["simulation", "real_imu"]},
+      "telemetry_valid": {"type": "boolean"},
+      "alignment_error_s": {"type": "number", "minimum": 0},
+      "reference": {
+        "type": "object",
+        "required": ["heave_m", "pitch_deg", "roll_deg", "reference_id"],
+        "properties": {
+          "heave_m": {"type": "number"},
+          "pitch_deg": {"type": "number"},
+          "roll_deg": {"type": "number"},
+          "reference_id": {"type": "string", "minLength": 1}
+        }
+      },
+      "relative_heave_m": {"type": "number"},
+      "relative_pitch_deg": {"type": "number"},
+      "relative_roll_deg": {"type": "number"},
+      "correction_mode": {
+        "enum": ["metadata_only", "blocked_invalid_telemetry", "blocked_alignment", "geometric_ready"]
+      },
+      "heave_action": {"type": "string"},
+      "pitch_action": {"type": "string"},
+      "roll_action": {"type": "string"},
+      "applied_to_pixels": {"type": "boolean"},
+      "geometry_ready": {"type": "boolean"},
+      "limitation": {"type": "string", "minLength": 1}
+    }
+  }
+  
